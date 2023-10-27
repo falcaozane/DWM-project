@@ -77,11 +77,12 @@ st.write('Comparing Models')
 st.markdown("<div>Linear Regression R^2 Score: <b>{:.2f}</b></div>".format(r2_score(y_test, regressor_lr.predict(x_test))), unsafe_allow_html=True)
 st.markdown("<div>Random Forest R^2 Score: <b>{:.2f}</b></div>".format(r2_score(y_test, regressor_rf.predict(x_test))), unsafe_allow_html=True)
 
-st.markdown("Done by ")
-st.markdown("9529 Jonathan Dabre")
-st.markdown("9603 Zane Falcao")
-st.markdown("9631 Alroy Pereira")
 
 # Add a section to display the dataset
 st.write('Insurance Dataset')
 st.write(dataset)
+
+st.subheader("Done by ")
+st.markdown("9529 Jonathan Dabre")
+st.markdown("9603 Zane Falcao")
+st.markdown("9631 Alroy Pereira")
