@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
@@ -77,10 +79,19 @@ st.write('Comparing Models')
 st.markdown("<div>Linear Regression R^2 Score: <b>{:.2f}</b></div>".format(r2_score(y_test, regressor_lr.predict(x_test))), unsafe_allow_html=True)
 st.markdown("<div>Random Forest R^2 Score: <b>{:.2f}</b></div>".format(r2_score(y_test, regressor_rf.predict(x_test))), unsafe_allow_html=True)
 
-
 # Add a section to display the dataset
 st.write('Insurance Dataset')
 st.write(dataset)
+
+# Add a section to display the correlation matrix heatmap
+st.subheader('Correlation Matrix Heatmap')
+st.write('Heatmap of the correlation matrix of the dataset.')
+# Calculate the correlation matrix
+correlation_matrix = dataset.corr()
+# Create the heatmap using Seaborn
+fig, ax = plt.subplots(figsize=(12, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.8, ax=ax)
+st.pyplot(fig)  # Display the heatmap in your Streamlit app
 
 st.subheader("Done by ")
 st.markdown("9529 Jonathan Dabre")
