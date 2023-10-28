@@ -93,7 +93,7 @@ fig, ax = plt.subplots(figsize=(12, 8))
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.8, ax=ax)
 st.pyplot(fig)  # Display the heatmap in your Streamlit app
 
-st.subheader("Done by ")
-st.markdown("9529 Jonathan Dabre")
-st.markdown("9603 Zane Falcao")
-st.markdown("9631 Alroy Pereira")
+st.subheader("Done by")
+st.markdown("Jonathan Dabre - <span style='color: #FF5733;'>9529</span>", unsafe_allow_html=True)
+st.markdown("Zane Falcao - <span style='color: #33FF33;'>9603</span>", unsafe_allow_html=True)
+st.markdown("Alroy Pereira - <span style='color: #3333FF;'>9631</span>", unsafe_allow_html=True)
