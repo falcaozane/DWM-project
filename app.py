@@ -94,6 +94,15 @@ sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.8, ax=
 st.pyplot(fig)  # Display the heatmap in your Streamlit app
 
 st.subheader("Done by JAZ")
-st.markdown("Jonathan Dabre - <span style='color: #FF5733;'>9529</span>", unsafe_allow_html=True)
-st.markdown("Alroy Pereira - <span style='color: #3333FF;'>9631</span>", unsafe_allow_html=True)
-st.markdown("Zane Falcao - <span style='color: #33FF33;'>9603</span>", unsafe_allow_html=True)
+
+# Stylish names with corresponding colors
+names = [
+    ("Jonathan Dabre", "#FF5733", 9529),
+    ("Alroy Pereira", "pink", 9631),
+    ("Zane Falcao", "#33FF33", 9603)
+]
+
+
+# Loop through the names and display them with styles
+for name, color, rollNo in names:
+    st.markdown(f"{name} - <span style='color: {color}; font-size: 18px; font-weight: bold;'>{rollNo}</span>", unsafe_allow_html=True)
