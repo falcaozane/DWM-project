@@ -1,6 +1,6 @@
 # DWM-project
 
-# Live: https://dwm-project-jaz.streamlit.app/#
+# Live: https://dwm-project-jaz.streamlit.app/
 dwm project for sem 5 <br/>
 Algorithms used _Linear Regression and Random Forest_ <br/>
 
