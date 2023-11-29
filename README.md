@@ -4,6 +4,8 @@
 dwm project for sem 5 <br/>
 Algorithms used _Linear Regression and Random Forest_ <br/>
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](URL_TO_YOUR_APP)
+
 Built using Streamlit, pandas, numpy, seaborn, matplotlib, sklearn
 
 
